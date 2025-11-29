@@ -1,1 +1,1 @@
-Personal project for helping my QA testing workflow
+Personal project for helping my QA testing workflow.
