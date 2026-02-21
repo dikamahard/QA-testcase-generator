@@ -1,9 +1,10 @@
 import Excel from "exceljs";
 
-const workbook = new Excel.Workbook();
-const worksheet = workbook.addWorksheet('Test');
 
-export async function generateSheet(testCase) {
+
+export async function generateSheet(workbook, sheetName, testCase) {
+
+  const worksheet = workbook.addWorksheet(sheetName);
 
   // Header Row
   const HEADERCELL = ["B6", "C6", "D6", "E6", "F6", "G6", "I6", "J6", "K6", "L6"];
@@ -143,7 +144,8 @@ export async function generateSheet(testCase) {
   console.log("Created excel successfully");
 
 
-  await workbook.xlsx.writeFile("tes1.xlsx");
+  //await workbook.xlsx.writeFile("tes1.xlsx");
+  return worksheet;
 }
 
 
