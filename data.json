@@ -1,0 +1,188 @@
+[
+  {
+    "id": "s001",
+    "sheetName": "Feature Login",
+    "testCase": [
+      {
+        "id": "s001-t001",
+        "tcid": "TC-001",
+        "testscenario": "User login with valid credentials",
+        "type": "Positive",
+        "precondition": ["User is registered in the system", "User account is active"],
+        "testdata": ["username = validUser01", "password = ValidPass123!"],
+        "testprocedure": [
+          "Open login page",
+          "Input valid username and password",
+          "Click Login button"
+        ],
+        "expectedresult": [
+          "System redirects to Dashboard page",
+          "User name is displayed in header"
+        ],
+        "actualresult": [
+          null,
+          null,
+          "System redirects to Dashboard, name shown correctly"
+        ],
+        "testresult": "1",
+        "notes": null
+      },
+      {
+        "id": "s001-t002",
+        "tcid": "TC-002",
+        "testscenario": "User login with invalid password",
+        "type": "Negative",
+        "precondition": ["User is registered in the system", "User account is active"],
+        "testdata": ["username = validUser01", "password = WrongPass999!"],
+        "testprocedure": [
+          "Open login page",
+          "Input valid username and invalid password",
+          "Click Login button"
+        ],
+        "expectedresult": [
+          "System stays on login page",
+          "Error message 'Invalid username or password' is displayed",
+          "No session is created"
+        ],
+        "actualresult": [null, null, null],
+        "testresult": "0",
+        "notes": null
+      },
+      {
+        "id": "s001-t003",
+        "tcid": "TC-003",
+        "testscenario": "User login with invalid password",
+        "type": "Negative",
+        "precondition": ["User is registered in the system", "User account is active"],
+        "testdata": ["username = validUser01", "password = WrongPass999!"],
+        "testprocedure": [
+          "Open login page",
+          "Input valid username and invalid password",
+          "Click Login button"
+        ],
+        "expectedresult": [
+          "System stays on login page",
+          "Error message 'Invalid username or password' is displayed",
+          "No session is created"
+        ],
+        "actualresult": [null, null, null],
+        "testresult": "0",
+        "notes": null
+      },
+      {
+        "id": "s001-t004",
+        "tcid": "TC-004",
+        "testscenario": "User login with invalid password",
+        "type": "Negative",
+        "precondition": ["User is registered in the system", "User account is active"],
+        "testdata": ["username = validUser01", "password = WrongPass999!"],
+        "testprocedure": [
+          "Open login page",
+          "Input valid username and invalid password",
+          "Click Login button"
+        ],
+        "expectedresult": [
+          "System stays on login page",
+          "Error message 'Invalid username or password' is displayed",
+          "No session is created"
+        ],
+        "actualresult": [null, null, null],
+        "testresult": "0",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "s002",
+    "sheetName": "Feature Register",
+    "testCase": [
+      {
+        "id": "s002-t001",
+        "tcid": "TC-101",
+        "testscenario": "User register with valid credentials",
+        "type": "Positive",
+        "precondition": ["User is registered in the system", "User account is active"],
+        "testdata": ["username = validUser01", "password = ValidPass123!"],
+        "testprocedure": [
+          "Open login page",
+          "Input valid username and password",
+          "Click Login button"
+        ],
+        "expectedresult": [
+          "System redirects to Dashboard page",
+          "User name is displayed in header"
+        ],
+        "actualresult": [
+          null,
+          null,
+          "System redirects to Dashboard, name shown correctly"
+        ],
+        "testresult": "1",
+        "notes": null
+      },
+      {
+        "id": "s002-t002",
+        "tcid": "TC-102",
+        "testscenario": "User register with invalid password",
+        "type": "Negative",
+        "precondition": ["User is registered in the system", "User account is active"],
+        "testdata": ["username = validUser01", "password = WrongPass999!"],
+        "testprocedure": [
+          "Open login page",
+          "Input valid username and invalid password",
+          "Click Login button"
+        ],
+        "expectedresult": [
+          "System stays on login page",
+          "Error message 'Invalid username or password' is displayed",
+          "No session is created"
+        ],
+        "actualresult": [null, null, null],
+        "testresult": "0",
+        "notes": null
+      },
+      {
+        "id": "s002-t003",
+        "tcid": "TC-103",
+        "testscenario": "User register with invalid password",
+        "type": "Negative",
+        "precondition": ["User is registered in the system", "User account is active"],
+        "testdata": ["username = validUser01", "password = WrongPass999!"],
+        "testprocedure": [
+          "Open login page",
+          "Input valid username and invalid password",
+          "Click Login button"
+        ],
+        "expectedresult": [
+          "System stays on login page",
+          "Error message 'Invalid username or password' is displayed",
+          "No session is created"
+        ],
+        "actualresult": [null, null, null],
+        "testresult": "0",
+        "notes": null
+      },
+      {
+        "id": "s002-t004",
+        "tcid": "TC-104",
+        "testscenario": "User register with invalid password",
+        "type": "Negative",
+        "precondition": ["User is registered in the system", "User account is active"],
+        "testdata": ["username = validUser01", "password = WrongPass999!"],
+        "testprocedure": [
+          "Open login page",
+          "Input valid username and invalid password",
+          "Click Login button"
+        ],
+        "expectedresult": [
+          "System stays on login page",
+          "Error message 'Invalid username or password' is displayed",
+          "No session is created"
+        ],
+        "actualresult": [null, null, null],
+        "testresult": "0",
+        "notes": null
+      }
+    ]
+  }
+]

@@ -1,8 +1,10 @@
 export const excelData = [
   {
+    id: "s001",
     sheetName: "Feature Login",
     testCase: [
       {
+        id: "s001-t001",
         tcid: "TC-001",
         testscenario: "User login with valid credentials",
         type: "Positive",
@@ -19,9 +21,10 @@ export const excelData = [
         ],
         actualresult: [null, null, "System redirects to Dashboard, name shown correctly"],
         testresult: "1",
-        notes: "",
+        notes: null,
       },
       {
+        id: "s001-t002",
         tcid: "TC-002",
         testscenario: "User login with invalid password",
         type: "Negative",
@@ -39,9 +42,10 @@ export const excelData = [
         ],
         actualresult: [null, null, null],
         testresult: "0",
-        notes: "",
+        notes: null,
       },
       {
+        id: "s001-t003",
         tcid: "TC-003",
         testscenario: "User login with invalid password",
         type: "Negative",
@@ -59,9 +63,10 @@ export const excelData = [
         ],
         actualresult: [null, null, null],
         testresult: "0",
-        notes: "",
+        notes: null,
       },
       {
+        id: "s001-t004",
         tcid: "TC-004",
         testscenario: "User login with invalid password",
         type: "Negative",
@@ -79,14 +84,16 @@ export const excelData = [
         ],
         actualresult: [null, null, null],
         testresult: "0",
-        notes: "",
+        notes: null,
       },
     ],
   },
   {
+    id: "s002",
     sheetName: "Feature Register",
     testCase: [
-        {
+      {
+        id: "s002-t001",
         tcid: "TC-101",
         testscenario: "User register with valid credentials",
         type: "Positive",
@@ -103,9 +110,10 @@ export const excelData = [
         ],
         actualresult: [null, null, "System redirects to Dashboard, name shown correctly"],
         testresult: "1",
-        notes: "",
+        notes: null,
       },
       {
+        id: "s002-t002",
         tcid: "TC-102",
         testscenario: "User register with invalid password",
         type: "Negative",
@@ -123,9 +131,10 @@ export const excelData = [
         ],
         actualresult: [null, null, null],
         testresult: "0",
-        notes: "",
+        notes: null,
       },
       {
+        id: "s002-t003",
         tcid: "TC-103",
         testscenario: "User register with invalid password",
         type: "Negative",
@@ -143,9 +152,10 @@ export const excelData = [
         ],
         actualresult: [null, null, null],
         testresult: "0",
-        notes: "",
+        notes: null,
       },
       {
+        id: "s002-t004",
         tcid: "TC-104",
         testscenario: "User register with invalid password",
         type: "Negative",
@@ -163,7 +173,7 @@ export const excelData = [
         ],
         actualresult: [null, null, null],
         testresult: "0",
-        notes: "",
+        notes: null,
       },
     ],
   },
