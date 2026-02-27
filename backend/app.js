@@ -21,6 +21,14 @@ app.get('/', async (req, res) => {
 
     // await generateSheet(workbook, sheetName1, testCase1);
 
+
+    /*****
+     * Algorithm
+     * 1. Count sheet
+     * 2. Make cover sheet
+     * 3. Generate each sheet
+     * 4. Return final excel file
+     *****/
     for (const { sheetName, testCase } of excelData) {
         console.log(sheetName, testCase);
 

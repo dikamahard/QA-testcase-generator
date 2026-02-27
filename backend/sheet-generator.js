@@ -141,7 +141,7 @@ export async function generateSheet(workbook, sheetName, testCase) {
 
 
 
-  console.log("Created excel successfully");
+  console.log(`Sheet ${sheetName} generated successfully`);
 
 
   //await workbook.xlsx.writeFile("tes1.xlsx");
