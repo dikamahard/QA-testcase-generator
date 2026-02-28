@@ -1,6 +1,3 @@
-import Excel from "exceljs";
-
-
 
 export async function generateSheet(workbook, sheetName, testCase) {
 
@@ -120,8 +117,8 @@ export async function generateSheet(workbook, sheetName, testCase) {
 
 
     // Merge Cell
-    console.log(rowMergeStart);
-    console.log(rowMergeEnd);
+    console.log(`rowMergeStart : ${rowMergeStart}`);
+    console.log(`rowMergeEnd : ${rowMergeEnd}`);
     worksheet.mergeCells(`B${rowMergeStart}:B${rowMergeEnd}`);
     worksheet.mergeCells(`C${rowMergeStart}:C${rowMergeEnd}`);  
     worksheet.mergeCells(`D${rowMergeStart}:D${rowMergeEnd}`);  
@@ -139,10 +136,7 @@ export async function generateSheet(workbook, sheetName, testCase) {
     rowMergeStart += maxRow;
   }
 
-
-
   console.log(`Sheet ${sheetName} generated successfully`);
-
 
   //await workbook.xlsx.writeFile("tes1.xlsx");
   return worksheet;
